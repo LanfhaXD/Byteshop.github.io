@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* ตะกร้าสินค้า */
+/* เฮดเดอร์ */
+.body{
+	width:100%
+	}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+	max-width: 100%;
+}
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    margin-left: 15px; /* ระยะห่างระหว่างชื่อผู้ใช้กับปุ่ม */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    color: #333; /* สีตัวอักษร */
+    font-weight: bold; /* ทำให้ตัวหนา */
+}
+
+.checkout-btn {
+    background-color: #4CAF50; /* สีพื้นหลังของปุ่ม */
+    color: black; /* สีตัวอักษร */
+    padding: 10px 20px; /* ระยะห่างภายใน */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 5px; /* มุมโค้ง */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ไปที่ปุ่ม */
+    transition: background-color 0.3s; /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+.checkout-btn:hover {
+    background-color: #45a049; /* สีพื้นหลังเมื่อชี้ไปที่ปุ่ม */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px; /* ขนาดโลโก้ */
+}
+
+.menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #007bff; /* เปลี่ยนสีเมื่อ hover */
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.actions input {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+.actions input:focus {
+    border-color: #007bff;
+}
+
+.actions i {
+    cursor: pointer;
+}
+
+.icon-user img, .icon-cart img {
+    width: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions {
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .actions input {
+        width: 150px;
+    }
+}
+
+.cart-container {
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.cart-table td img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.cart-table input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: #e60000;
+}
+
+/* สรุปคำสั่งซื้อ */
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.cart-summary h2, .cart-summary h3 {
+    margin-bottom: 15px;
+}
+
+.cart-summary p, .cart-summary h3 {
+    font-size: 18px;
+}
+
+.cart-summary span {
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cart-summary {
+        text-align: center;
+    }
+
+    .cart-table img {
+        width: 80px;
+    }
+}
+/* CSS Document */
+
